@@ -9,9 +9,14 @@ import UIKit
 
 class HomeTableViewHeader: UIView {
     
-    @IBOutlet weak var HeaderView: UIView!
-    @IBOutlet weak var HeaderLabel: UILabel!
-    @IBOutlet weak var BannerView: UIView!
-    @IBOutlet weak var BannerMessageView: UIView!
-    @IBOutlet weak var BannerImageView: UIImageView!
+    @IBOutlet weak var headerView: UIView!
+    @IBOutlet weak var headerLabel: UILabel!
+
+    @IBOutlet weak var bannerView: UIView!
+    @IBOutlet weak var messageView: UIView!
+    @IBOutlet weak var imageView: UIImageView!
+
+    func configuraBackground() {
+        headerView.backgroundColor = UIColor(red: 30/255, green: 59/255, blue: 119/255, alpha: 1)
+    }
 }
