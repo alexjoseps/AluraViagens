@@ -30,9 +30,8 @@
                         <constraint firstAttribute="height" constant="250" id="VQY-hS-7Zy"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sXH-zQ-xIX" userLabel="Banner View">
-                    <rect key="frame" x="23" y="139" width="355" height="130"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sXH-zQ-xIX" userLabel="Banner View">
+                    <rect key="frame" x="23" y="135" width="355" height="130"/>
                     <subviews>
                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cjc-au-0LU" userLabel="Message View">
                             <rect key="frame" x="0.0" y="0.0" width="199" height="130"/>
@@ -45,6 +44,9 @@
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="130" id="ap4-lL-dMX"/>
+                    </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
@@ -52,7 +54,10 @@
             <constraints>
                 <constraint firstItem="s4Y-3F-pmg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Hc5-Ca-3N9"/>
                 <constraint firstItem="s4Y-3F-pmg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Lma-9s-vXX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sXH-zQ-xIX" secondAttribute="trailing" constant="24" id="TGx-0g-jpD"/>
                 <constraint firstItem="s4Y-3F-pmg" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Yd1-Bo-bKB"/>
+                <constraint firstItem="sXH-zQ-xIX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="23" id="fXG-fy-hWh"/>
+                <constraint firstItem="sXH-zQ-xIX" firstAttribute="bottom" secondItem="s4Y-3F-pmg" secondAttribute="bottom" constant="15" id="mrr-p2-p1L"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
