@@ -33,19 +33,25 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sXH-zQ-xIX" userLabel="Banner View">
                     <rect key="frame" x="23" y="135" width="355" height="130"/>
                     <subviews>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cjc-au-0LU" userLabel="Message View">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjc-au-0LU" userLabel="Message View">
                             <rect key="frame" x="0.0" y="0.0" width="199" height="130"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.31764705882352939" green="0.70196078431372544" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </view>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ztY-ZO-18V">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ztY-ZO-18V">
                             <rect key="frame" x="199" y="0.0" width="156" height="130"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstItem="cjc-au-0LU" firstAttribute="leading" secondItem="sXH-zQ-xIX" secondAttribute="leading" id="AB7-Sf-514"/>
+                        <constraint firstItem="ztY-ZO-18V" firstAttribute="width" secondItem="sXH-zQ-xIX" secondAttribute="width" multiplier="0.439437" id="Cr9-aF-t0D"/>
+                        <constraint firstAttribute="bottom" secondItem="cjc-au-0LU" secondAttribute="bottom" id="Kdf-7D-xJR"/>
+                        <constraint firstAttribute="trailing" secondItem="ztY-ZO-18V" secondAttribute="trailing" id="NMM-xN-XLr"/>
                         <constraint firstAttribute="height" constant="130" id="ap4-lL-dMX"/>
+                        <constraint firstItem="ztY-ZO-18V" firstAttribute="top" secondItem="sXH-zQ-xIX" secondAttribute="top" id="bjP-CG-iaw"/>
+                        <constraint firstItem="cjc-au-0LU" firstAttribute="top" secondItem="sXH-zQ-xIX" secondAttribute="top" id="eZQ-4h-fIP"/>
+                        <constraint firstItem="cjc-au-0LU" firstAttribute="width" secondItem="sXH-zQ-xIX" secondAttribute="width" multiplier="0.560563" id="q2s-4x-nZp"/>
+                        <constraint firstAttribute="bottom" secondItem="ztY-ZO-18V" secondAttribute="bottom" id="xLE-Zu-pJh"/>
                     </constraints>
                 </view>
             </subviews>
