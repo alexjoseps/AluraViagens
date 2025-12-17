@@ -15,11 +15,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s4Y-3F-pmg" userLabel="Header View">
-                    <rect key="frame" x="0.0" y="0.0" width="402" height="250"/>
+                    <rect key="frame" x="-299" y="0.0" width="1000" height="250"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="alura viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUQ-Ws-6sX" userLabel="Header Label">
-                            <rect key="frame" x="41" y="26" width="144" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="alura viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUQ-Ws-6sX" userLabel="Header Label">
+                            <rect key="frame" x="322" y="48" width="144" height="33"/>
                             <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="23"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -28,6 +27,8 @@
                     <color key="backgroundColor" red="0.1176470588" green="0.23137254900000001" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="250" id="VQY-hS-7Zy"/>
+                        <constraint firstItem="hUQ-Ws-6sX" firstAttribute="top" secondItem="s4Y-3F-pmg" secondAttribute="top" constant="48" id="diG-Cj-f0I"/>
+                        <constraint firstAttribute="width" constant="1000" id="zxQ-dU-Bnx"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sXH-zQ-xIX" userLabel="Banner View">
@@ -80,10 +81,10 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="s4Y-3F-pmg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Hc5-Ca-3N9"/>
+                <constraint firstItem="hUQ-Ws-6sX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="23" id="2sf-di-9if"/>
+                <constraint firstItem="s4Y-3F-pmg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="L1D-Qb-c78"/>
                 <constraint firstItem="s4Y-3F-pmg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Lma-9s-vXX"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sXH-zQ-xIX" secondAttribute="trailing" constant="24" id="TGx-0g-jpD"/>
-                <constraint firstItem="s4Y-3F-pmg" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Yd1-Bo-bKB"/>
                 <constraint firstItem="sXH-zQ-xIX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="23" id="fXG-fy-hWh"/>
                 <constraint firstItem="sXH-zQ-xIX" firstAttribute="bottom" secondItem="s4Y-3F-pmg" secondAttribute="bottom" constant="15" id="mrr-p2-p1L"/>
             </constraints>
@@ -97,14 +98,6 @@
             </connections>
             <point key="canvasLocation" x="132.83582089552237" y="102.2883295194508"/>
         </view>
-        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HxI-2B-zPc">
-            <rect key="frame" x="0.0" y="0.0" width="42" height="19"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-            <nil key="textColor"/>
-            <nil key="highlightedColor"/>
-            <point key="canvasLocation" x="-64.179104477611943" y="260.52631578947364"/>
-        </label>
     </objects>
     <resources>
         <image name="ferias" width="988" height="1364"/>
