@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
+        viagensTableView.register(UINib(nibName: "ViagemTableViewCell", bundle: nil), forCellReuseIdentifier: "ViagemTableViewCell")
         viagensTableView.dataSource = self
         viagensTableView.delegate = self
 
@@ -33,12 +34,9 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)
         -> UITableViewCell
     {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-
-        var content = cell.defaultContentConfiguration()
-        content.text = "Viagem \(indexPath.row)"
-
-        cell.contentConfiguration = content
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ViagemTableViewCell") as? ViagemTableViewCell else {
+            fatalError("Fail to load ViagemTableViewCell")
+        }
 
         return cell
     }
@@ -55,5 +53,9 @@ extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 300
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 400
     }
 }
