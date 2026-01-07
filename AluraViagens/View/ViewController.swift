@@ -28,17 +28,26 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int)
         -> Int
     {
-        return 10
+        return viagensDoMock?[section].numeroDeLinhas ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)
         -> UITableViewCell
     {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ViagemTableViewCell") as? ViagemTableViewCell else {
+        guard let celulaViagem = tableView.dequeueReusableCell(withIdentifier: "ViagemTableViewCell") as? ViagemTableViewCell else {
             fatalError("Fail to load ViagemTableViewCell")
         }
 
-        return cell
+        let viagemViewModel = viagensDoMock?[indexPath.section]
+        
+        switch viagemViewModel?.tipo {
+        case .destaques:
+            celulaViagem.configuraCelula(viagemViewModel?.viagens[indexPath.row])
+            return celulaViagem
+        default:
+            return UITableViewCell()
+        }
+
     }
 
 }
