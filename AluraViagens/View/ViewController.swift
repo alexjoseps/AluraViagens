@@ -65,6 +65,6 @@ extension ViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 400
+        return UIDevice.current.userInterfaceIdiom == .phone ? 400 : 450
     }
 }
